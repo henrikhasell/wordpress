@@ -1,14 +1,9 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<title>Henrik Hasell</title>
-		<meta charset="utf-8"/>
-		<link href="<?php echo get_bloginfo('template_directory'); ?>/style.css" rel="stylesheet"/>
-		<?php wp_head(); ?>
-	</head>
-	<body>
-		<?php get_header(); ?>
-		<?php get_footer(); ?>
-		<?php wp_footer(); ?>
-	</body>
-</html>
+<?php get_header(); ?>
+<small><?php echo "Post format: " . get_post_format(); ?></small>
+<?php
+while(have_posts() == true)
+{
+	get_template_part('content', get_post_format());
+}
+?>
+<?php get_footer(); ?>

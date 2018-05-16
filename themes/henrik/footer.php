@@ -1,1 +1,5 @@
-<h3>Footer</h3>
+		<hr/>
+		<small>Created by Henrik Hasell</small>
+		<?php wp_footer(); ?>
+	</body>
+</html>
