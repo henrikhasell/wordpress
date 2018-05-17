@@ -1,23 +1,41 @@
 <?php
+class Empty_Menu_Walker extends Walker_Nav_Menu {
+	function start_lvl(&$output, $depth = 0, $args = array()){
+	}
+	function end_lvl(&$output, $depth = 0, $args = array()) {
+	}
+	function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0) {
+	}
+	function end_el(&$output, $item, $depth = 0, $args = array()) {
+	}
+	function display_element( $element, &$children_elements, $max_depth, $depth, $args, &$output ) {
+	}
+}
+class Minimal_Menu_Walker extends Walker_Nav_Menu {
+	function start_lvl(&$output, $depth = 0, $args = array()){
+		$output .= "<ol>";
+	}
+	function end_lvl(&$output, $depth = 0, $args = array()) {
+		$output .= "</ol>";
+	}
+	function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0) {
+		$output .= '<li><a href = "' . esc_attr($item->url) . '">';
+	}
+	function end_el(&$output, $item, $depth = 0, $args = array()) {
+		$output .= "</a></li>";
+	}
+	function display_element( $element, &$children_elements, $max_depth, $depth, $args, &$output ) {
+		$this->start_el($output, $element, $depth, $args);
+		$output .= $element->title;
+		$this->end_el($output, $element, $depth, $args);
+	}
+}
+
 function register_menus() {
 	register_nav_menus(
 		array(
 			'top' => __('Top Menu', 'henrik'),
 			'social' => __('Social Links Menu', 'henrik')
-		)
-	);
-	add_theme_support(
-		'starter-content',
-		'nav_menus' => array(
-			'top' => array(
-				'name' => __('Top Menu', 'henrik'),
-				'items' => array(
-					'link_home',
-					'page_about',
-					'page_blog',
-					'page_contact',
-				)
-			)
 		)
 	);
 }

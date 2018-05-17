@@ -7,11 +7,6 @@
 		<?php wp_head(); ?>
 	</head>
 	<body>
-		<nav>
-			<ul>
-				<?php /* wp_list_pages('&title_li='); */ ?>
-			</ul>
-		</nav>
+		<?php wp_nav_menu(array('theme_location' => 'top')); ?>
 		<h1><?php echo get_bloginfo('name'); ?></h1>
 		<h2><?php echo get_bloginfo('description'); ?></h2>
-		<hr/>
