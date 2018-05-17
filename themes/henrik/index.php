@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
+<?php wp_nav_menu(array('theme_location' => 'top')); ?>
 <?php
 // while(have_posts() == true)
 // {
