@@ -1,9 +1,9 @@
 <?php get_header(); ?>
-<small><?php echo "Post format: " . get_post_format(); ?></small>
+<?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
 <?php
-while(have_posts() == true)
-{
-	get_template_part('content', get_post_format());
-}
+// while(have_posts() == true)
+// {
+// 	get_template_part('content', get_post_format());
+// }
 ?>
 <?php get_footer(); ?>
