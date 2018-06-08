@@ -9,9 +9,10 @@
 		<link href="<?php echo get_bloginfo('template_directory'); ?>/style.css" rel="stylesheet"/>
 	</head>
 	<body>
+		<?php get_template_part('navbar', get_post_format()); ?>
 		<div class = "henrik-scroll">
-			<div class = "container">
-				<?php get_template_part('navbar', get_post_format()); ?>
-				<h1><?php echo get_bloginfo('name'); ?></h1>
-				<h2><?php echo get_bloginfo('description'); ?></h2>
+			<div class="container text-center ">
+				<h1 class="display-1"><?php echo get_bloginfo('name'); ?></h1>
+				<h2 class="font-weight-light text-muted"><?php echo get_bloginfo('description'); ?></h2>
 				<hr/>
+			</div>

@@ -5,7 +5,7 @@
 <?php
 while(have_posts() == true)
 {
-	get_template_part('loop-templates/content', get_post_format());
+	get_template_part('loop-templates/content-single', get_post_format());
 }
 ?>
 		</div>
