@@ -14,11 +14,13 @@ while(have_posts() == true)
 		</div>
 	</div>
   <hr/>
-  <?php
-	if(comments_open() || get_comments_number())
-	{
-		comments_template();
-	}
-	?>
+  <div class="bg-light my-3 p-3">
+    <?php
+    if(comments_open() || get_comments_number())
+    {
+	    comments_template();
+    }
+    ?>
+  </div>
 </div>
 <?php get_footer(); ?>

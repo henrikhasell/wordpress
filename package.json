@@ -5,6 +5,6 @@
     "popper.js": "^1.12.9"
   },
   "devDependencies": {
-    "gulp4": "^4.0.2"
+    "gulp": "^4.0.0"
   }
 }
