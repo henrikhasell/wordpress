@@ -13,13 +13,12 @@
 	</head>
 	<body>
 		<?php get_template_part('navbar', get_post_format()); ?>
-			<div class="container text-center">
-	      <img class="img-fluid mt-4 mb-3" src="https://blackrockdigital.github.io/startbootstrap-freelancer/img/profile.png" alt="">
+		<div class="jumbotron text-center">
+	      <img class="mb-2 rounded-circle" src="<?php echo get_bloginfo('template_directory'); ?>/henrik.png" alt="">
 				<h1 class="display-1 m-0">
 				    <?php echo get_bloginfo('name'); ?>
 	      </h1>
-				<h2 class="font-weight-light text-muted mb-4">
+				<h2 class="font-weight-light text-muted">
 				    <?php echo get_bloginfo('description'); ?>
 	      </h2>
-		<hr/>
-			</div>
+		</div>
