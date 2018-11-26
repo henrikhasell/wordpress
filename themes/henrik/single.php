@@ -2,16 +2,17 @@
 <div class="container">
 	<div class="row">
 		<div class="col-sm-8">
-<?php
-while(have_posts() == true)
-{
-	get_template_part('loop-templates/content-single', get_post_format());
-}
-?>
+      <?php
+      while(have_posts() == true)
+      {
+        get_template_part('loop-templates/content-single', get_post_format());
+      }
+      ?>
 		</div>
 		<div class="col-sm-4">
-			<?php get_sidebar(); ?>
-		</div>
+      <hr class="d-block d-sm-none"/>
+		  <?php get_sidebar(); ?>
+	  </div>
 	</div>
   <hr/>
   <div class="bg-light my-3 p-3">

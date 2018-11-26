@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-sm navbar-dark bg-primary static-top" role="navigation">
-	<div class="container">
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top" role="navigation">
+	<div class="container-fluid">
 		<a class="navbar-brand" href="<?php echo get_bloginfo( 'wpurl' );?>"><?php echo get_bloginfo( 'name' ); ?></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-top" aria-controls="nav-top" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
