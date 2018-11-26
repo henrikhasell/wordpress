@@ -9,5 +9,5 @@
   </div>
 </div>
 <?php if (($wp_query->current_post +1) != ($wp_query->post_count)) {
-  echo '<hr/>';
+echo '<hr/>';
 } ?>

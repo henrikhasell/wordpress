@@ -14,11 +14,11 @@
 	<body>
 		<?php get_template_part('navbar', get_post_format()); ?>
 		<div class="jumbotron text-center">
-	      <img class="mb-2 rounded-circle" src="<?php echo get_bloginfo('template_directory'); ?>/henrik.png" alt="">
+	      <img class="mb-3 rounded-circle" src="<?php echo get_bloginfo('template_directory'); ?>/henrik.png" alt="">
 				<h1 class="display-1 m-0">
 				    <?php echo get_bloginfo('name'); ?>
 	      </h1>
-				<h2 class="font-weight-light text-muted">
+				<h2 class="m-0 text-muted">
 				    <?php echo get_bloginfo('description'); ?>
 	      </h2>
 		</div>
