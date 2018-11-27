@@ -81,7 +81,8 @@ $fields = array(
     'fields' => $fields,
     'comment_field' => $comment_field,
     'class_submit' => 'btn btn-secondary',
-    'submit_field' => '<div>%1$s %2$s</div>'
+    'submit_field' => '<div>%1$s %2$s</div>',
+    'cancel_reply_before' => $_GET['replytocom'] ? ' | ' : ''
 );
 ?>
 <?php if(have_comments() == true) { ?>
